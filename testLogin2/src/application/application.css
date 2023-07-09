@@ -1,0 +1,50 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#vbox1 {
+-fx-background-color:rgba(245,150,50,0.3);
+}
+
+#vbox2 {
+-fx-border-radius:50;
+-fx-border-color: rgba(251, 157, 116, 1);
+}
+
+#vbox3 {
+-fx-border-radius:10;
+-fx-border-color: rgba(251, 157, 116, 1);
+}
+
+#vbox4 {
+-fx-border-radius:15;
+-fx-border-color: rgba(251, 157, 116, 1);
+}
+
+#button1 {
+	-fx-background-color:rgba(245,150,70,0.3);
+}
+#textarea1 {
+	-fx-background-color:rgba(255,170,50,0.1);
+}
+#button2 {
+	-fx-background-color:rgba(250,150,70,0.8);
+}
+#button3 {
+    -fx-background-color:rgba(254, 251, 250, 1);
+    -fx-border-color: rgba(251, 157, 116, 1);
+    -fx-border-width: 3;
+    -fx-border-radius:50;
+
+  }
+ 
+table-view{
+  -fx-background-color: rgba(245,150,50,0.3);
+  -fx-border-color: #ccc;
+  -fx-border-width: 2 0 0 0;
+}
+
+.table-view .column-header{
+	-fx-background-color:rgba(251, 157, 116, 1);
+}
+.table-row-cell{
+	-fx-cell-size: 30px;
+}

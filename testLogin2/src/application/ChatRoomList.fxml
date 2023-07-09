@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="vbox1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChatRoomController">
+   <children>
+      <Label layoutX="265.0" layoutY="25.0" text="채팅방 목록">
+         <font>
+            <Font name="SeoulHangangC EB" size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="14.0" layoutY="59.0" prefHeight="249.0" prefWidth="571.0">
+         <content>
+            <TableView id="button1" fx:id="tableViewRoom" prefHeight="237.0" prefWidth="559.0" stylesheets="@application.css">
+              <columns>
+                <TableColumn fx:id="tbPK" prefWidth="97.33331048488617" text="방번호" />
+                <TableColumn fx:id="tbTITLE" prefWidth="185.33333587646484" text="방제목" />
+                  <TableColumn fx:id="tbNUM" minWidth="6.66668701171875" prefWidth="80.66668701171875" text="인원" />
+                  <TableColumn fx:id="tbMAIN" prefWidth="115.99993896484375" text="방장" />
+                  <TableColumn fx:id="tbATTR" minWidth="0.0" prefWidth="73.33340454101562" text="기타" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <HBox layoutX="39.0" layoutY="318.0" prefHeight="61.0" prefWidth="522.0" spacing="100.0">
+         <children>
+            <Button id="button2" fx:id="goChatBtn" mnemonicParsing="false" onAction="#GoChatRoom" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 15;" stylesheets="@application.css" text="입장">
+               <font>
+                  <Font name="SeoulHangangC M" size="16.0" />
+               </font>
+            </Button>
+            <Button id="button2" fx:id="makeRoomBtn" mnemonicParsing="false" onAction="#makeRoom" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 15;" stylesheets="@application.css" text="방 만들기">
+               <font>
+                  <Font name="SeoulHangangC M" size="16.0" />
+               </font>
+            </Button>
+            <Button id="button2" fx:id="resetBtn" mnemonicParsing="false" onAction="#setTableView" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 10;" stylesheets="@application.css" text="새로고침">
+               <font>
+                  <Font name="SeoulHangangC M" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Button id="button3" fx:id="freidBtn" layoutX="441.0" layoutY="12.0" mnemonicParsing="false" onAction="#GoFriend" prefHeight="40.0" prefWidth="143.0" style="-fx-background-radius: 50;" stylesheets="@application.css" text="  친구 목록">
+         <font>
+            <Font name="SeoulHangangC M" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="442.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgFile/icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

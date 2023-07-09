@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistController">
+   <children>
+      <Label layoutX="114.0" layoutY="63.0" text="[ 회원가입 ]" textFill="#ff8400">
+         <font>
+            <Font name="SeoulHangangC EB" size="40.0" />
+         </font>
+      </Label>
+      <VBox layoutX="120.0" layoutY="150.0" prefHeight="200.0" prefWidth="161.0" spacing="10.0">
+         <children>
+            <TextField fx:id="R_name" promptText="Name" />
+            <TextField fx:id="R_ID" prefHeight="22.0" prefWidth="178.0" promptText="ID" />
+            <PasswordField fx:id="R_PW" promptText="PassWord" />
+            <PasswordField fx:id="R_PW2" promptText="PassWord Confirm" />
+            <TextField fx:id="R_email" prefHeight="22.0" prefWidth="178.0" promptText="Email" />
+            <HBox prefHeight="27.0" prefWidth="161.0" spacing="40.0">
+               <children>
+                  <RadioButton fx:id="R_male" mnemonicParsing="false" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="R_female" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btn_signUp" layoutX="136.0" layoutY="431.0" mnemonicParsing="false" onAction="#registBtnAction" style="-fx-background-color: orange;" text="Sing up!" textFill="#fcfcfc">
+         <font>
+            <Font name="Comic Sans MS" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="R_chkID" onAction="#chkID" layoutX="290.0" layoutY="183.0" mnemonicParsing="false" text="중복확인">
+         <font>
+            <Font name="SeoulNamsanC L" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="281.0" layoutY="218.0" prefHeight="16.0" prefWidth="119.0" text="숫자,영문,특수문자(9자이상)">
+         <font>
+            <Font name="SeoulNamsanC L" size="11.0" />
+         </font>
+      </Label>
+      <HBox layoutX="54.0" layoutY="339.0" prefHeight="70.0" prefWidth="280.0">
+         <children>
+            <Label prefHeight="75.0" prefWidth="58.0" text="주소" textFill="#a8a3a3ad">
+               <font>
+                  <Font name="SeoulNamsanC L" size="25.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="70.0" prefWidth="230.0" spacing="3.0" style="-fx-background-color: whilte;">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="add1" promptText="우편번호" />
+                        <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addBtnAction" prefHeight="22.0" prefWidth="133.0" text="우편번호 검색">
+                           <font>
+                              <Font name="SeoulNamsanC L" size="11.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="add2" promptText="주소" />
+                  <TextField fx:id="add3" promptText="상세주소" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="85.0" layoutY="157.0" text="이름" />
+      <Label layoutX="79.0" layoutY="188.0" text="아이디" />
+      <Label layoutX="61.0" layoutY="219.0" text="비밀번호" />
+      <Label layoutX="41.0" layoutY="250.0" text="비밀번호 확인" />
+      <Label layoutX="79.0" layoutY="282.0" text="이메일" />
+   </children>
+</AnchorPane>

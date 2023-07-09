@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <HBox layoutX="169.0" layoutY="59.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="123.0" spacing="8.0">
+               <children>
+                  <Label text="회원 ID : " textFill="#ff8400">
+                     <font>
+                        <Font name="SeoulHangangC EB" size="12.0" />
+                     </font></Label>
+                  <Label text="회원 이름 : " textFill="#ff8400">
+                     <font>
+                        <Font name="SeoulHangangC EB" size="12.0" />
+                     </font></Label>
+                  <Label text="회원 비번 : " textFill="#ff8400">
+                     <font>
+                        <Font name="SeoulHangangC EB" size="12.0" />
+                     </font></Label>
+                  <Label text="회원 이메일 : " textFill="#ff8400">
+                     <font>
+                        <Font name="SeoulHangangC EB" size="12.0" />
+                     </font></Label>
+                  <Label text="회원 성별 : " textFill="#ff8400">
+                     <font>
+                        <Font name="SeoulHangangC EB" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="173.0" spacing="3.0">
+               <children>
+                  <TextField fx:id="memId" />
+                  <TextField fx:id="memName" />
+                  <TextField fx:id="memPw" />
+                  <TextField fx:id="memEmail" />
+                  <TextField fx:id="memGender" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="addbtn" layoutX="171.0" layoutY="211.0" mnemonicParsing="false" onAction="#addClick" text="추가" textFill="#ff8400">
+         <font>
+            <Font name="SeoulNamsanC B" size="12.0" />
+         </font></Button>
+      <Button fx:id="modbtn" layoutX="269.0" layoutY="211.0" mnemonicParsing="false" onAction="#modClick" text="수정" textFill="#ff8400">
+         <font>
+            <Font name="SeoulNamsanC B" size="12.0" />
+         </font></Button>
+      <Button fx:id="delbtn" layoutX="368.0" layoutY="211.0" mnemonicParsing="false" onAction="#delClick" text="삭제" textFill="#ff8400">
+         <font>
+            <Font name="SeoulNamsanC B" size="12.0" />
+         </font></Button>
+      <Button fx:id="okbtn" layoutX="469.0" layoutY="211.0" mnemonicParsing="false" onAction="#okClick" opacity="0.57" text="확인" textFill="#ff8400">
+         <font>
+            <Font name="SeoulNamsanC B" size="12.0" />
+         </font></Button>
+      <Button fx:id="cancelbtn" layoutX="574.0" layoutY="211.0" mnemonicParsing="false" onAction="#cancelClick" opacity="0.57" text="취소" textFill="#ff8400">
+         <font>
+            <Font name="SeoulNamsanC B" size="12.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="14.0" text="[ 관리자 페이지 ]" textFill="#ff8400">
+         <font>
+            <Font name="SeoulHangangC B" size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="32.0" layoutY="250.0" prefHeight="200.0" prefWidth="716.0">
+         <content>
+            <TableView fx:id="tableview" prefHeight="200.0" prefWidth="700.0">
+              <columns>
+                <TableColumn fx:id="tbMemId" prefWidth="108.0" text="회원 ID" />
+                <TableColumn fx:id="tbMemName" prefWidth="94.0" text="회원 이름" />
+                  <TableColumn fx:id="tbMemPw" prefWidth="136.0" text="회원 비번" />
+                  <TableColumn fx:id="tbMemEmail" prefWidth="208.0" text="회원 이메일" />
+                  <TableColumn fx:id="tbMemGender" prefWidth="150.0" text="회원 성별" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="reTablebtn" layoutX="335.0" layoutY="461.0" mnemonicParsing="false" onAction="#tableClick" text="테이블 재정의" textFill="#ff8400">
+         <font>
+            <Font name="SeoulNamsanC B" size="12.0" />
+         </font>
+      </Button>
+      <HBox layoutX="499.0" layoutY="104.0" prefHeight="33.0" prefWidth="227.0">
+         <children>
+            <ComboBox fx:id="comboBox" onAction="#Select" prefHeight="22.0" prefWidth="121.0" />
+            <TextField id="IDsearch" fx:id="IDsearch" prefHeight="22.0" prefWidth="93.0" promptText="검색" />
+         </children>
+      </HBox>
+      <Button fx:id="searchBtn" layoutX="499.0" layoutY="127.0" mnemonicParsing="false" onAction="#searchClick" prefHeight="26.0" prefWidth="214.0" text="검색!" textFill="#ff9900">
+         <font>
+            <Font name="SeoulNamsanC B" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="426.0" layoutY="115.0" text="회원 검색" textFill="#ff8400">
+         <font>
+            <Font name="SeoulHangangC EB" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

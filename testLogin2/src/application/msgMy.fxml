@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<HBox alignment="TOP_RIGHT" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Chatcontroller">
+   <children>
+      <VBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label id="label" text="Label" textOverrun="CLIP">
+               <font>
+                   <Font name="SeoulHangangC L" size="15.0" />
+               </font>
+               <padding>
+                  <Insets right="5.0" />
+               </padding></Label>
+            <HBox alignment="CENTER_RIGHT" spacing="5.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <StackPane>
+                     <children>
+                        <StackPane opacity="0.25" style="-fx-background-color: #bfff00; -fx-background-radius: 10;">
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin></StackPane>
+                        <TextFlow lineSpacing="2.0" maxHeight="-Infinity" textAlignment="RIGHT" StackPane.alignment="CENTER_RIGHT">
+                           <children>
+                              <Text id="text" fx:id="MyMsg" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="kkkkkkkkkkkkkk">
+                                 <font>
+                                      <Font name="SeoulHangangC L" size="13.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </Text>
+                           </children>
+                           <StackPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </StackPane.margin>
+                        </TextFlow>
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </HBox>
+            <Text fx:id="nowTime" strokeType="OUTSIDE" strokeWidth="0.0" text="현재 시간">
+               <font>
+                  <Font name="SeoulHangangC L" size="10.0" />
+               </font>
+            </Text>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="80.0" />
+   </padding>
+</HBox>

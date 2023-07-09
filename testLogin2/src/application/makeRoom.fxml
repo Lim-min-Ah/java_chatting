@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="vbox1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MakeRoomController">
+   <children>
+      <HBox layoutX="84.0" layoutY="76.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <Label stylesheets="@application.css" text="채팅방 이름">
+                     <padding>
+                        <Insets top="4.0" />
+                     </padding>
+                     <font>
+                        <Font name="SeoulHangangC M" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label stylesheets="@application.css" text="최대 인원수">
+                     <padding>
+                        <Insets bottom="-3.0" />
+                     </padding>
+                     <font>
+                        <Font name="SeoulHangangC M" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label stylesheets="@application.css" text="ip번호">
+                     <padding>
+                        <Insets bottom="-3.0" left="20.0" />
+                     </padding>
+                     <font>
+                        <Font name="SeoulHangangC M" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label stylesheets="@application.css" text="port 번호">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="SeoulHangangC M" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="18.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="9.0">
+               <children>
+                  <TextField fx:id="input_chatName" />
+                  <TextField fx:id="input_chatNum" />
+                  <TextField fx:id="input_IP" text="127.0.0.1" />
+                  <TextField fx:id="input_port" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+      <Button id="button2" fx:id="MakeBtn" layoutX="168.0" layoutY="214.0" mnemonicParsing="false" onAction="#MakeBtnPressed" stylesheets="@application.css" text="만들기!">
+         <font>
+            <Font name="SeoulHangangC M" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
