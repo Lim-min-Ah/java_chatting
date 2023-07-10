@@ -28,5 +28,5 @@ rooms : 채팅 목록 테이블
 <br>
 <img width="408" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/1605800e-bd96-4a96-9ad6-d624dfba925a">
 <br>
-‘임민아입니다’ 회원과 ‘이민영 회원과 ‘aa’회원이 대화를 나누고 있는 그림으로 과거 채팅 기록을 띄울 수 있다.
+회원들이 대화를 나누고 있는 그림으로 말풍선 아래 시간과 과거 채팅 기록을 띄울 수 있다.
 
