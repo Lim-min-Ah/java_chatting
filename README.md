@@ -1,4 +1,4 @@
-# java_chatting
+# java_chatting(개인 과제 프로젝트)
 자바 채팅 프로젝트 - 서버
 <br>
 <img width="299" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/1bc5a5b7-a543-4fda-8b61-24aafac0e21e">
