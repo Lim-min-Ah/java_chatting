@@ -3,7 +3,7 @@
 <img width="475" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/6d6745d8-feee-41e5-a3c8-d98e4a71a966">
 <br>
 <pre>
-  mariaDB를 통합적으로 관리해주는 HeidiSQL를 사용해 데이터베이스를 관리
+  mariaDB를 통합적으로 관리해주는 HeidiSQL를 사용해 데이터베이스를 관리한다.
 </pre>
 <br>
 
@@ -23,16 +23,10 @@ rooms : 채팅 목록 테이블
  컨트롤러를 통해 사용자와 직접적으로 상호작용하여 사용자가 Button을 클릭할 시에 서비스를 통해 구현한 기능을 컨트롤러에 할당하여 이에 맞는 이벤트를 컨트롤러에서 수행할 수 있도록 한다.
 </pre>
 <br><br>
+<hr>
+자바 채팅 프로젝트 
+<br>
+<img width="408" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/1605800e-bd96-4a96-9ad6-d624dfba925a">
+<br>
+‘임민아입니다’ 회원과 ‘이민영 회원과 ‘aa’회원이 대화를 나누고 있는 그림으로 과거 채팅 기록을 띄울 수 있다.
 
-자바 채팅 프로젝트 - 서버
-<br>
-<img width="299" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/1bc5a5b7-a543-4fda-8b61-24aafac0e21e">
-<br>
-"시작하기" 버튼 클릭 시 서버가 시작되고 클라이언트와 작용을 시작한다.
-<br><br>
-<img width="297" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/d6fe4459-b571-452e-82f8-63eec7eeeb82">
-<br>
-"종료하기" 버튼 클릭 시 서버가 종료되고 클라이언트와 작용을 종료한다. 
-이는 서버와 클라이언트와의 연결이 끊겨 채팅을 할 수 없음을 의미한다.
-
-자바 채팅 프로젝트 - 클라이언트
