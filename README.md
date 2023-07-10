@@ -6,11 +6,11 @@
 <h3>[Table 정보]</h3>
 <img width="482" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/69e5c095-82e3-4367-a8d3-2393dae7a186">
 <br>
-<div>
+<pre>
 chat : 채팅 기록 테이블
 members : 회원 테이블
 rooms : 채팅 목록 테이블
-</div>
+</pre>
 <br><br>
 
 <h3>[진행 구성도]</h3>
