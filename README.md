@@ -30,6 +30,8 @@ rooms : 채팅 목록 테이블
 <br>
 <img width="349" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/ee942f01-f105-4a50-84c5-5eb0979015bc">
 <br>
+DB의 room테이블에서 가져온 테이블 뷰 와 입장, 방 만들기, 새로고침, 친구 목록 버튼 총 5가지로 구성된다.
+<br>
 <img width="408" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/1605800e-bd96-4a96-9ad6-d624dfba925a">
 <br>
 회원들이 대화를 나누고 있는 그림으로 말풍선 아래 시간과 과거 채팅 기록을 띄울 수 있다.
