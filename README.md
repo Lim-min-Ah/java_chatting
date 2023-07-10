@@ -26,6 +26,10 @@ rooms : 채팅 목록 테이블
 <hr>
 자바 채팅 프로젝트 
 <br>
+<img width="283" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/9507d584-42b4-4a6e-a04d-78ab8e13d622">
+<br>
+<img width="349" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/ee942f01-f105-4a50-84c5-5eb0979015bc">
+<br>
 <img width="408" alt="image" src="https://github.com/Lim-min-Ah/java_chatting/assets/87717513/1605800e-bd96-4a96-9ad6-d624dfba925a">
 <br>
 회원들이 대화를 나누고 있는 그림으로 말풍선 아래 시간과 과거 채팅 기록을 띄울 수 있다.
